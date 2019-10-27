@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+        }
+    }
+    defaultConfig {
+        applicationId "com.zzlzd.android.educloud"
+        minSdkVersion 19
+        targetSdkVersion 27
+        multiDexEnabled true
+        versionCode 2
+        versionName "1.0"
+    }
+    //签名
+    signingConfigs {
+        debug {
+          /*  storeFile file('E:/key/786_mall.jks')
+            storePassword "mall_woaijingan"
+            keyAlias "786_mall"
+            keyPassword "mall_woaijingan"*/
+        }
+       /* release {// 自己的签名文件
+            storeFile file('E:/key/786_mall.jks')
+            storePassword "mall_woaijingan"
+            keyAlias "786_mall"
+            keyPassword "mall_woaijingan"
+        }*/
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+//            signingConfig signingConfigs.release
+            proguardFiles 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    // 支付宝 SDK AAR 包所需的配置
+    implementation(name: 'alipaySdk-15.5.7-20181023110917', ext: 'aar')
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.1.6'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.qianwen:okhttp-utils:3.8.0'
+    implementation 'com.qianwen:update-app:3.5.2'
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="write">#FFFFFF</color><!-- 白色 -->
+    <color name="gray">#D8D8D8</color><!--灰色-->
+    <color name="green">#528633</color>
+    <color name="red">#CD1B21</color>
+    <color name="lightgray">#8D8D8D</color><!-- 文字颜色：灰 -->
+    <color name="hint_gray">#cccccc</color><!-- 文字颜色：浅灰 -->
+    <color name="lightestgray">#c4c4c4</color><!-- 文字颜色：浅灰 -->
+    <color name="bg_gray">#F5F5F9</color>
+    <color name="btn_normal_bg">#4297ff</color><!-- 蓝色 -->
+    <color name="bg_red">#FF2840</color><!-- 未读 -->
+    <color name="txt_dackgray">#6D6D6D</color><!-- 文字颜色 -->
+    <color name="txt_cardzi">#4A2D84</color><!-- 证件上的深紫色 -->
+    <color name="txt_hz">#AD750A</color><!-- 证件上的深紫色 -->
+    <color name="txt_black">#333333</color>
+</resources>
